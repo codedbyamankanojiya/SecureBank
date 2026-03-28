@@ -94,8 +94,8 @@ A modern, feature-rich desktop banking application built with Python and CustomT
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/Bank-Management.git
-   cd Bank-Management
+   git clone https://github.com/codedbyamankanojiya/SecureBank.git
+   cd SecureBank
    ```
 
 2. **Install Dependencies**
@@ -105,7 +105,7 @@ A modern, feature-rich desktop banking application built with Python and CustomT
 
 3. **Run the Application**
    ```bash
-   python bankapp.py
+   python SecureBank.py
    ```
 
 ### Alternative: Virtual Environment (Recommended)
@@ -124,7 +124,7 @@ source venv/bin/activate
 pip install customtkinter
 
 # Run application
-python bankapp.py
+python SecureBank.py
 ```
 
 ---
@@ -135,7 +135,7 @@ python bankapp.py
 
 1. **Launch the Application**
    ```bash
-   python bankapp.py
+   python SecureBank.py
    ```
 
 2. **Create an Account**
@@ -184,9 +184,9 @@ python bankapp.py
 ## 📁 Project Structure
 
 ```
-Bank-Management/
+SecureBank/
 │
-├── bankapp.py              # Main application file
+├── SecureBank.py            # Main application file
 ├── bank.db                 # SQLite database (auto-generated)
 ├── README.md               # This file
 ├── LICENSE                 # MIT License
@@ -196,7 +196,7 @@ Bank-Management/
 ### Code Architecture
 
 ```
-bankapp.py
+SecureBank.py
 │
 ├── DatabaseManager         # Database operations layer
 │   ├── create_tables()    # Initialize database schema
@@ -388,7 +388,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/codedbyamankanojiya/Bank-Management/issues) page
+1. Check the [Issues](https://github.com/codedbyamankanojiya/SecureBank/issues) page
 2. Create a new issue with detailed description
 
 

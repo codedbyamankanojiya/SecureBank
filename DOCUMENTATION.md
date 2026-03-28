@@ -93,8 +93,8 @@ SecureBank follows a clean three-layer architecture pattern:
 python --version
 
 # 3. Clone repository
-git clone https://github.com/codedbyamankanojiya/Bank-Management.git
-cd Bank-Management
+git clone https://github.com/codedbyamankanojiya/SecureBank.git
+cd SecureBank
 
 # 4. Create virtual environment
 python -m venv venv
@@ -106,7 +106,7 @@ python -m venv venv
 pip install customtkinter
 
 # 7. Run application
-python bankapp.py
+python SecureBank.py
 ```
 
 #### macOS/Linux
@@ -115,8 +115,8 @@ python bankapp.py
 python3 --version
 
 # 2. Clone repository
-git clone https://github.com/codedbyamankanojiya/Bank-Management.git
-cd Bank-Management
+git clone https://github.com/codedbyamankanojiya/SecureBank.git
+cd SecureBank
 
 # 3. Create virtual environment
 python3 -m venv venv
@@ -128,7 +128,7 @@ source venv/bin/activate
 pip install customtkinter
 
 # 6. Run application
-python bankapp.py
+python SecureBank.py
 ```
 
 ### Dependency Details
@@ -558,13 +558,13 @@ if success:
 
 #### Issue: Application won't start
 
-**Symptoms:** Error message when running `python bankapp.py`
+**Symptoms:** Error message when running `python SecureBank.py`
 
 **Solutions:**
 1. Verify Python version: `python --version` (must be 3.8+)
 2. Check CustomTkinter installation: `pip list | grep customtkinter`
 3. Reinstall dependencies: `pip install --upgrade customtkinter`
-4. Check for syntax errors: `python -m py_compile bankapp.py`
+4. Check for syntax errors: `python -m py_compile SecureBank.py`
 
 ---
 
@@ -609,7 +609,7 @@ if success:
 
 ### Debug Mode
 
-To enable debug output, add this at the start of `bankapp.py`:
+To enable debug output, add this at the start of `SecureBank.py`:
 
 ```python
 import logging
@@ -667,7 +667,7 @@ Create executable using PyInstaller:
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --name SecureBank bankapp.py
+pyinstaller --onefile --windowed --name SecureBank SecureBank.py
 ```
 
 Executable will be in `dist/` folder.
@@ -688,7 +688,7 @@ Executable will be in `dist/` folder.
 ## Support & Contact
 
 For technical support or questions:
-- GitHub Issues: https://github.com/codedbyamankanojiya/Bank-Management/issues
+- GitHub Issues: https://github.com/codedbyamankanojiya/SecureBank/issues
 - Documentation: This file
 
 ---
