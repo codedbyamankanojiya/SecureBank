@@ -72,13 +72,13 @@ SecureBank follows a clean three-layer architecture pattern:
 
 ### System Requirements
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| OS | Windows 7/macOS 10.12/Linux | Windows 10/macOS 12/Ubuntu 20.04 |
-| Python | 3.8 | 3.10+ |
-| RAM | 2 GB | 4 GB |
-| Storage | 50 MB | 100 MB |
-| Display | 1024x768 | 1920x1080 |
+| Component | Minimum                     |                Recommended             |
+|-----------|-----------------------------|----------------------------------------|
+| OS        | Windows 7/macOS 10.12/Linux | Windows 10/macOS 12/Ubuntu 20.04       |
+| Python    | 3.8                         | 3.10+                                  |
+| RAM       | 2 GB                        | 4 GB                                   |
+| Storage   | 50 MB                       | 100 MB                                 |
+| Display   | 1024x768                    | 1920x1080                              |
 
 ### Detailed Installation Steps
 
@@ -356,11 +356,11 @@ Recipient:
 │            users                    │
 ├─────────────────────────────────────┤
 │ id (PK)          INTEGER            │
-│ name             TEXT                │
-│ pin              TEXT                │
+│ name             TEXT               │
+│ pin              TEXT               │
 │ account_number   TEXT (UNIQUE)      │
-│ balance          INTEGER             │
-│ created_at       TIMESTAMP           │
+│ balance          INTEGER            │
+│ created_at       TIMESTAMP          │
 └─────────────────────────────────────┘
               │
               │ 1:N
@@ -370,11 +370,11 @@ Recipient:
 ├─────────────────────────────────────┤
 │ id (PK)          INTEGER            │
 │ user_id (FK)     INTEGER            │
-│ type             TEXT                │
-│ amount           INTEGER             │
-│ recipient_account TEXT               │
-│ timestamp        TIMESTAMP           │
-│ description      TEXT                │
+│ type             TEXT               │
+│ amount           INTEGER            │
+│ recipient_account TEXT              │
+│ timestamp        TIMESTAMP          │
+│ description      TEXT               │
 └─────────────────────────────────────┘
 ```
 
@@ -382,26 +382,26 @@ Recipient:
 
 #### users Table
 
-| Column | Type | Constraints | Description |
-|--------|------|-------------|-------------|
-| id | INTEGER | PRIMARY KEY, AUTOINCREMENT | Unique user identifier |
-| name | TEXT | NOT NULL | Full name of account holder |
-| pin | TEXT | NOT NULL | 4-digit authentication PIN |
-| account_number | TEXT | UNIQUE, NOT NULL | 10-digit account number |
-| balance | INTEGER | DEFAULT 0 | Current account balance in rupees |
-| created_at | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Account creation date/time |
+| Column          | Type     | Constraints                | Description            |
+|-----------------|----------|----------------------------|------------------------|
+| id              | INTEGER  | PRIMARY KEY, AUTOINCREMENT | Unique user identifier |
+| name            | TEXT     | NOT NULL                   | Full name of account   holder |
+| pin             | TEXT     | NOT NULL                   | 4-digit authentication PIN |
+| account_number  | TEXT     | UNIQUE, NOT NULL           | 10-digit account number |
+| balance         | INTEGER  | DEFAULT 0                  | Current account balance in rupees |
+| created_at      | TIMESTAMP| DEFAULT CURRENT_TIMESTAMP | Account creation date/time |
 
 #### transactions Table
 
-| Column | Type | Constraints | Description |
-|--------|------|-------------|-------------|
-| id | INTEGER | PRIMARY KEY, AUTOINCREMENT | Unique transaction identifier |
-| user_id | INTEGER | FOREIGN KEY → users(id) | Reference to user |
-| type | TEXT | NOT NULL | Transaction type (DEPOSIT/WITHDRAW/TRANSFER_OUT/TRANSFER_IN) |
-| amount | INTEGER | NOT NULL | Transaction amount in rupees |
+| Column          | Type | Constraints | Description |
+|-----------------|------|-------------|-------------|
+| id              | INTEGER | PRIMARY KEY, AUTOINCREMENT | Unique transaction identifier |
+| user_id         | INTEGER | FOREIGN KEY → users(id) | Reference to user |
+| type            | TEXT | NOT NULL | Transaction type (DEPOSIT/WITHDRAW/TRANSFER_OUT/TRANSFER_IN) |
+| amount          | INTEGER | NOT NULL | Transaction amount in rupees |
 | recipient_account | TEXT | NULL | Recipient account for transfers |
-| timestamp | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Transaction date/time |
-| description | TEXT | NULL | Transaction description |
+| timestamp       | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Transaction date/time |
+| description     | TEXT | NULL | Transaction description |
 
 ### Indexes
 
@@ -693,6 +693,6 @@ For technical support or questions:
 
 ---
 
-**Last Updated:** February 2026  
-**Version:** 1.0  
+**Last Updated:** March 2025  
+
 **Author:** Aman Kanojiya

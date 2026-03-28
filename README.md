@@ -74,12 +74,12 @@ A modern, feature-rich desktop banking application built with Python and CustomT
 
 ## 🛠 Technology Stack
 
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| **Language** | Python 3.8+ | Core application logic |
-| **GUI Framework** | CustomTkinter 5.0+ | Modern UI components |
-| **Database** | SQLite 3 | Data persistence |
-| **Standard Libraries** | tkinter, random, datetime | Built-in functionality |
+| Component             | Technology               | Purpose                  |
+|-----------------------|--------------------------|--------------------------|
+| **Language**          | Python 3.8+              | Core application logic   |
+| **GUI Framework**     | CustomTkinter 5.0+       | Modern UI components     |
+| **Database**          | SQLite 3                 | Data persistence         |
+| **Standard Libraries**| tkinter, random, datetime| Built-in functionality   |
 
 ---
 
@@ -186,11 +186,11 @@ python SecureBank.py
 ```
 SecureBank/
 │
-├── SecureBank.py            # Main application file
+├── SecureBank.py           # Main application file
 ├── bank.db                 # SQLite database (auto-generated)
 ├── README.md               # This file
 ├── LICENSE                 # MIT License
-└── .gitattributes         # Git configuration
+└── .gitattributes          # Git configuration
 ```
 
 ### Code Architecture
@@ -198,32 +198,32 @@ SecureBank/
 ```
 SecureBank.py
 │
-├── DatabaseManager         # Database operations layer
-│   ├── create_tables()    # Initialize database schema
-│   ├── create_user()      # User registration
-│   ├── get_user_by_account() # User retrieval
-│   ├── update_balance()   # Balance updates
-│   ├── add_transaction()  # Transaction logging
-│   ├── get_transaction_history() # Retrieve transactions
-│   └── transfer_money()   # Inter-account transfers
+├── DatabaseManager                 # Database operations layer
+│   ├── create_tables()             # Initialize database schema
+│   ├── create_user()               # User registration
+│   ├── get_user_by_account()       # User retrieval
+│   ├── update_balance()            # Balance updates
+│   ├── add_transaction()           # Transaction logging
+│   ├── get_transaction_history()   # Retrieve transactions
+│   └── transfer_money()            # Inter-account transfers
 │
-├── BankController          # Business logic layer
-│   ├── sign_up()          # Registration logic
-│   ├── sign_in()          # Authentication
-│   ├── deposit()          # Deposit processing
-│   ├── withdraw()         # Withdrawal processing
-│   ├── transfer()         # Transfer processing
-│   ├── get_transaction_history() # History retrieval
-│   └── get_account_info() # Account information
+├── BankController                  # Business logic layer
+│   ├── sign_up()                   # Registration logic
+│   ├── sign_in()                   # Authentication
+│   ├── deposit()                   # Deposit processing
+│   ├── withdraw()                  # Withdrawal processing
+│   ├── transfer()                  # Transfer processing
+│   ├── get_transaction_history()   # History retrieval
+│   └── get_account_info()          # Account information
 │
-└── GUI Components          # User interface layer
-    ├── BankApp            # Main application window
-    ├── LoginFrame         # Login screen
-    ├── RegisterFrame      # Registration screen
-    ├── DashboardFrame     # Main dashboard
-    ├── TransactionHistoryFrame # Transaction list
-    ├── TransferFrame      # Money transfer screen
-    └── AccountDetailsFrame # Account information display
+└── GUI Components                  # User interface layer
+    ├── BankApp                     # Main application window
+    ├── LoginFrame                  # Login screen
+    ├── RegisterFrame               # Registration screen
+    ├── DashboardFrame              # Main dashboard
+    ├── TransactionHistoryFrame     # Transaction list
+    ├── TransferFrame               # Money transfer screen
+    └── AccountDetailsFrame         # Account information display
 ```
 
 ---
@@ -310,14 +310,14 @@ Professional display of all account information in organized cards.
 
 ### Color Palette
 
-| Color | Hex Code | Usage |
-|-------|----------|-------|
-| Primary Blue | `#1E88E5` | Login, Dashboard header, primary actions |
-| Success Green | `#43A047` | Deposits, positive transactions |
-| Warning Red | `#E53935` | Withdrawals, negative transactions |
-| Accent Orange | `#FB8C00` | Transfers, highlights |
-| Info Purple | `#5E35B1` | Transaction history |
-| Teal | `#00897B` | Account details |
+| Color         | Hex Code  | Usage                                    |
+|---------------|-----------|------------------------------------------|
+| Primary Blue  | `#1E88E5` | Login, Dashboard header, primary actions |
+| Success Green | `#43A047` | Deposits, positive transactions          |
+| Warning Red   | `#E53935` | Withdrawals, negative transactions       |
+| Accent Orange | `#FB8C00` | Transfers, highlights                    |
+| Info Purple   | `#5E35B1` | Transaction history                      |
+| Teal          | `#00897B` | Account details                          |
 
 ### Typography
 
